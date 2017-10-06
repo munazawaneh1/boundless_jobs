@@ -8,12 +8,12 @@ RSpec.describe JobsController, type: :controller do
     # TODO: replace the skip statement with a hash of valid attributes similar to the example
     # valid attributes must include the position and level values should be 0, 1, or 2 corresponding to junior, intermediate and senior
     # example: { position: 'Developer', level: Job.levels[:senior] }
-    skip('Add a hash of attributes valid for your model')
+    {position: 'Developer', level:  Job.levels[:senior, :intermediate, :senior]}
   end
 
   let(:invalid_attributes) do
     # TODO: replace the skip statement with a hash of valid attributes similar to the example
-    skip('Add a hash of attributes invalid for your model')
+    {position: nil, level:  nil}
   end
 
   # This should return the minimal set of values that should be in the session
